@@ -1,0 +1,1042 @@
+* {
+    scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body h2{
+    font-size: 20px;
+   text-align: center; 
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 20px; 
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 70px; 
+    overflow: hidden; 
+}
+.header .logo {
+    height: auto; 
+    width: 150px;
+    
+}
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn, .navbar .btn {
+    padding: 8px 16px;
+    background-color: #ff4d4f;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 77, 79, 0.2);
+}
+
+.btn:hover {
+    background-color: #ff6b6c;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 4px 8px rgba(255, 77, 79, 0.s3);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #ffe9e9;
+    padding: 50px 20px;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 0 25px;
+}
+
+.hero h1 {
+    color: #FF4C30;
+    font-size: 2.5em;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero .booking-btn {
+    background-color: #ff4d4f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 55%;
+}
+
+.available-vehicles h2{
+    font-size: 2em;
+    font-style:italic;
+}
+
+.available-vehicles {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.vehicles-category {
+    margin-bottom: 30px;
+}
+.vehicles-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vehicle-item {
+    text-align: center;
+    margin: 10px;
+}
+.vehicle-item img {
+    width: auto ;
+    height: auto;
+    margin-bottom: 10px;
+}
+.view-all {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff4d4f;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #ffe9e9;
+    gap: 20px;
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px
+}
+
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Highlight Box (Orange Box) */
+.highlight {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff4d4f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center; /* Center-aligns the content */
+    justify-content: space-between;
+    padding: 40px 80px; /* Adjust padding for layout */
+    background-color: #ffe9e9;
+    gap: 40px; /* Add more gap between image and text */
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Membuat gambar menggunakan 100% dari container */
+    max-width: 500px; /* Batas lebar gambar */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan shadow halus pada gambar */
+    transition: transform 0.3s ease; /* Efek zoom saat di hover */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Zoom saat hover */
+}
+
+.image-container img {
+    width: 100%; /* Gambar akan mengisi seluruh lebar container */
+    height: auto; /* Menjaga rasio aspek gambar tetap proporsional */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik tanpa distorsi */
+    align-content: center;
+}
+
+/* Highlight Overlay */
+.highlight {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff4d4f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.about-text {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.about-text h1 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    color: #FF4D4F;
+    font-size: 2em;
+    margin-bottom: 20px;
+    line-height: 1.2; 
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* List Styling */
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about-text ul li {
+    font-size: 1.30em;
+    margin-bottom: 15px;
+    display:block;
+    align-items: flex-start;
+    gap: 10px;
+    color: #333;
+}
+
+.about-text ul li strong {
+    color: #FF4D4F; 
+}
+
+.about-text ul li::before {
+    content: "";
+    color: #FF4D4F;
+    font-size: 1.2em;
+}
+
+
+/* Rental Process */
+.rental-process {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('../images/rental-proses.jpg');
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan elemen */
+    background-position: center center; /* Memposisikan gambar di tengah */
+    padding: 70px 50px ;
+}
+
+.rental-process-content{
+    width: 50%;
+    padding: 50px;
+}
+
+.rental-process h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.rental-process p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.step {
+    text-align: left;
+    width: 30%;
+    padding: 20px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+.step h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Contact Us */
+.contact-us-section {
+    padding: 40px;
+    background-color: #fff1f0;
+}
+
+.contact-us-section h2 {
+    font-size: 32px;
+    color: #ff4d4f;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Menyelaraskan elemen agar sejajar di atas */
+    gap: 20px; /* Menyesuaikan jarak antar form dan logo */
+}
+
+.contact-us-form {
+    flex: 1;
+    max-width: 500px!important;  /* Membatasi lebar form agar lebih rapat */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi kolom menjadi dua */
+    grid-template-rows: auto auto auto; /* Menambah baris untuk tiap bagian */
+    grid-template-areas: 
+        "nama email"
+        "telepon tanggal"
+        "pesan pesan"; /* Pesan mengambil seluruh lebar */
+    row-gap: 8px; /* Mengurangi jarak vertikal antar baris */
+    column-gap: 50px; /* Mengurangi jarak horizontal antar kolom */
+    padding: 30px;
+}
+
+.nama { grid-area: nama; }
+.telepon { grid-area: telepon; }
+.email { grid-area: email; }
+.tanggal { grid-area: tanggal; }
+.pesan { grid-area: pesan; }
+
+.contact-us-form input,
+.contact-us-form textarea {
+    width: 100%; /* Menggunakan seluruh lebar kolom */
+    padding: 8px; /* Mengurangi padding untuk lebih kompak */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    margin: 0; /* Menghapus margin pada input agar lebih rapat */
+}
+
+.contact-us-form input::placeholder,
+.contact-us-form textarea::placeholder {
+    color: #666;
+}
+
+.contact-us-form input {
+    height: 40px; /* Mengatur tinggi input agar seragam */
+}
+
+.contact-us-form .pesan textarea {
+    height: 150px; /* Tinggi yang lebih besar untuk kolom pesan */
+    width: 150px    ;
+    resize: none; /* Mencegah perubahan ukuran */
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    margin-top: 15px; /* Jarak tombol dengan form */
+}
+
+.contact-us-logo img {
+    max-width: 1000px; /* Mengurangi lebar logo agar form dan logo lebih seimbang */
+}
+
+
+
+/* Footer */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-image: url('../images/rental-proses.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-column {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+.contact-column h3 {
+    color: hsl(17, 100%, 50%);
+    margin-bottom: 10px;
+}
+
+.contact-column p, .contact-column ul {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 5px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.maps-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.maps-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.maps-section iframe {
+    border-radius: 5px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-logo {
+    width: auto;
+    height:80px;
+    margin-left: 20px;
+  
+}
+
+.footer-text {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+
+/* Daftar Section */
+.daftar-section {
+    max-width: 1200px;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto; /* Memusatkan secara horizontal */
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    align-items: center; /* Memusatkan secara horizontal */
+}
+
+.section-title {
+    color: #ff4d4f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.vehicles-list {
+    display: flex; /* Mengubah ke flex untuk berjejer secara horizontal */
+    flex-wrap: wrap; /* Memungkinkan item untuk membungkus jika diperlukan */
+    justify-content: center; /* Memusatkan secara horizontal */
+    gap: 20px; /* Jarak antar item */
+    margin-bottom: 30px;
+}
+
+.vehicle-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 0 1 500px; /* Menentukan lebar minimum untuk item */
+}
+
+.vehicle-item img {
+    width: 155px;
+    height: 120px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.vehicle-item h3 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.vehicle-item p {
+    color: #ff4d4f;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.vehicle-item:hover {
+    transform: scale(1.05);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.pagination a {
+    color: #ff4d4f;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.pagination .active {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+
+/* Section Profil */
+.profile-section {
+    max-width: 600px;
+    margin: 0 ;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+
+.profile-title {
+    color: #ff4d4f;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.profile-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="tel"],
+.profile-form input[type="date"],
+.profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.profile-form .gender-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-form .gender-options label {
+    font-size: 1rem;
+}
+
+.profile-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.save-button {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #e43a3b;
+}
+
+/* Container untuk billing dan rental */
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Billing Details */
+.billing-details {
+    flex: 1;
+    background-color: #ffe8e8;
+    padding: 24px;
+    height: 26rem;
+    border-radius: 5px;
+    max-width: 1001px;
+}
+
+.billing-details h2,
+.payment-method h2,
+.confirmation h2,
+.rental-detail h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.billing-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Payment Method */
+
+.payment-method {
+    background-color: #fff1f1;
+    padding: 24px;
+    border-radius: 5px;
+    margin: 20px 20px ;
+    max-width: 10000px; /* Set your desired width */
+}
+
+
+.payment-method h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.payment-method p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.payment-options .option {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.option-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Penting: Style untuk konten opsi */
+.option-content {
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    display: none; /* Sembunyikan secara default */
+}
+
+/* Tampilkan konten saat active */
+.option.active .option-content {
+    display: block;
+}
+
+.option-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-content li {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chevron {
+    border: solid #666;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.option.active .chevron {
+    transform: rotate(-135deg);
+}
+
+/* Radio button styling */
+.option-content input[type="radio"] {
+    margin-right: 8px;
+}
+
+.option-content label {
+    cursor: pointer;
+}
+
+/* Confirmation */
+.confirmation {
+    padding: 20px;
+    background-color: #fce4e4;
+    margin: 20px 20px;
+    align-items: center;
+    gap: 10px;
+    max-width: 10000px;
+    border-radius: 5px;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: rgb(94, 94, 94);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #ff5b5b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Rental Detail */
+.rental-detail {
+    flex: 1;
+    background-color: #ffe8e8;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.rental-detail h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.car-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-info img {
+    width: 150px; /* Sesuaikan sesuai kebutuhan */
+    height: auto;
+}
+
+
+.car-info h4 {
+    font-size: 25px;
+    font-weight: 500;
+    right: 10%;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-info h3,
+.total-day-rent h3 {
+    font-size: 20px;
+    color: #595959;
+}
+
+.price-info h4 {
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+}
+
+.total-day-rent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-day-rent h4 {
+    font-size: 20px;
+    color: black;
+    margin: 20px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.total-price h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.outline {
+    color: #e43a3b;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-right: 2%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.sidebar-nav a {
+    padding: 15px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+@media (max-width: 724px) {
+    .navbar {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .sidebar-nav a {
+        font-size: 20px;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .vehicles-category h3 {
+        font-size: 24px;
+    }
+
+    .about-us {
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    
+    .image-container {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        max-width: 80%;
+    }
+
+    .contact-us-container {
+        display: block;
+    }
+
+    .contact-us-logo {
+        display: none;
+    }
+
+    .contact-us-form {
+        max-width: 36rem;
+    }
+
+    .contact-section {
+        display: block;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .billing-details {
+        margin-bottom: 40px;
+        height: 15rem;
+    }
+
+    .rental-detail {
+        max-width: 39rem;
+    }
+    
+    .form-group input {
+        width: 280px;
+    }
+}
